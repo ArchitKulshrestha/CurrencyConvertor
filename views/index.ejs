@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/style.css">
+    
+    <title>Currency App</title>
+ 
+  </head>
+  <body>
+  <section class="home">
+    <div>
+      <h1>Currency Converter</h1>
+    </div>
+    <div class="card">
+      <form action="/" method="post" id="cur">
+        <div>
+          <label for="amount" ></label>
+          <input type="text"name="amount" id="amount" placeholder="Enter amount" value=<%= locals.amount%>>
+        </div>
+        <div>
+
+          <label for="Currency2"></label>
+          <select name="Currency2" id="Currency2" >
+            <option value="">From</option>
+            <option value="USD">USD</option>
+            <option value="INR">INR</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+          </select>
+         </div>
+        <div>
+
+          <label for="Currency1"></label>
+          <select name="Currency1" id="Currency1">
+            <option value="">To</option>
+            <option value="USD">USD</option>
+            <option value="INR">INR</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+          </select>
+       
+        </div> 
+    
+        <div>
+          <input type="submit" value="Submit" id="btn" class="button-35"/>
+        </div>
+      </form>
+        <div>
+          <label for="cAmount"></label>
+          <input type="text" id="cAmount" placeholder="Converted Amount" value=<%= locals.data%> >
+        </div>   
+    </div>
+    <div class="copyright">
+      <p>© <%= locals.Year %> Currency Converter. All rights reserved.</p>
+    </div>
+  </section>
+
+    
+  </body>
+
+</html>
