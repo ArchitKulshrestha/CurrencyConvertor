@@ -4,9 +4,9 @@ import bodyParser from "body-parser";
 import axios from "axios";
 import ejs from "ejs";
 
+
 const app = Express();
 
-app.set("view engine", "ejs");
 const port = 3000;
 app.use(Express.static("public"));
 

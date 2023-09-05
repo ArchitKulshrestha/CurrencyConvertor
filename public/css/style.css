@@ -7,7 +7,19 @@ body{
 }
 .home{
     height: 100vh;
-    background: url(../assets/pexels-karolina-grabowska-4386158.jpg) no-repeat center/cover;
+    background-image: linear-gradient(
+        275deg,
+        hsl(0deg 0% 0%) 0%,
+        hsl(60deg 5% 5%) 17%,
+        hsl(60deg 2% 9%) 32%,
+        hsl(60deg 1% 12%) 46%,
+        hsl(60deg 1% 15%) 57%,
+        hsl(60deg 1% 18%) 67%,
+        hsl(60deg 1% 21%) 76%,
+        hsl(60deg 1% 24%) 84%,
+        hsl(60deg 1% 27%) 92%,
+        hsl(60deg 1% 31%) 100%
+      );
     overflow: hidden;
     display: flex;
     justify-content: center;
